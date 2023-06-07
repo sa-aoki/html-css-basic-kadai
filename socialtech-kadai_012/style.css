@@ -1,6 +1,8 @@
 /* PC スマホ共通スタイル */
 body {
   font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 p {
@@ -16,7 +18,7 @@ PC用のスタイル
 body {
   max-width: 1080px;
   min-width: 960px;
-  margin: 0 auto 0 auto;
+  margin: 0px auto 0px auto;
 }
 
 /* ヘッダー */
@@ -100,7 +102,7 @@ header {
 
   /* 見出し */
   h2 {
-    margin: 40px 0 0 0;
+    margin: 20px;
   }
 
   h2::after {
@@ -110,6 +112,7 @@ header {
 
   h3 {
     font-size: 27px;
+    margin: 20px;
   }
 
   /* ミッション */
@@ -141,8 +144,7 @@ header {
   #product {
     background-color: #fafafa;
     width: 100%;
-    margin: 80px 0 80px 0;
-    padding: 10px 40px 0 40px;
+    margin: 80px auto 80px auto;
   }
   
   #product > div {
@@ -152,14 +154,13 @@ header {
 
   #product-left {
     width: 50%;
-    margin-right: 20px;
+    margin: 0 20px 0 20px;
     
   }
 
   #product-right {
     width: 50%;
-    margin-left: 20px;
-    margin-top: 80px;
+    margin: 80px 20px 0 20px;
   }
 
   #product-left > div {
@@ -196,7 +197,7 @@ header {
   }
 
   .product-explain > h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin: 5px 0 5px 0;
   }
 
@@ -212,19 +213,19 @@ header {
   /* ABOUT US */
 
   #aboutus {
-    margin: 80px auto 80px auto;
+    margin: 80px 20px 80px 20px;
   }
 
   #aboutus > div {
     display: flex;
   }
 
-  .culture-imag {
+  .culture-img {
     width: 100%;
     align-self: flex-start;
   }
 
-  .culture-imag2 {
+  .culture-img2 {
     margin-top: 50px;
     width: 100%;
   }
@@ -259,7 +260,7 @@ header {
   /* VISION */
 
   #vision {
-    margin: 80px auto 80px auto;
+    margin: 80px 20px 80px 20px;
   }
 
   #vision > div {
@@ -296,7 +297,7 @@ header {
   .vision-box > span > h4 {
     color: #2710d5;
     font-size: 19px;
-    margin-top: 80px;
+    margin: 80px 0 0 0;
   }
 
   .vision-box > span > h4::first-letter {
@@ -309,19 +310,20 @@ header {
   }
 
   .vision-box > span > p {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
   }
 
   /* CASES */
   #cases {
-    margin: 40px 0;
+    margin: 40px auto 40px auto;
     width: 100%;
   }
 
   ul {
     display: flex;
+    justify-content: space-around;
     list-style-type: none;
-    justify-content: center;
+    padding: 0;
   }
 
   li {
@@ -351,13 +353,6 @@ header {
   .case-content {
     font-size: 14px;
   }
-
-
-
-
-
-
-
   
   /* COMPANY */
 
@@ -365,113 +360,123 @@ header {
     margin: 80px auto 80px auto;
   }
 
-    #company-table {
-      width: 100%;
-    }
+  .company-table {
+    width: 100%;
+   }
 
-    .name {
-      text-align: left;
-      padding: 20px;
-      border-bottom-color: #2710d5;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-      width: 100px;
-    }
+  .tableheader {
+     text-align: left;
+    padding: 20px;
+    border-bottom-color: #2710d5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 100px;
+  }
     
-    .name-first {
-      text-align: left;
-      padding: 20px;
-      border-bottom-color: #2710d5;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-      width: 100px;
-      border-top-color: #2710d5;
-      border-top-width: 1px;
-      border-top-style: solid;
-    }
+  .tableheader-first {
+    text-align: left;
+    padding: 20px;
+    border-bottom-color: #2710d5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 100px;
+    border-top-color: #2710d5;
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
 
-    .text {
-      padding: 30px;
-      border-bottom-color: #ececec;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-    }
-    .text-first {
-      padding: 30px;
-      border-bottom-color: #ececec;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-      border-top-color: #ececec;
-      border-top-width: 1px;
-      border-top-style: solid;
-    }
+  .cell {
+    padding: 30px;
+    border-bottom-color: #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
 
-    /* CONTACT */
+  .cell-first {
+    padding: 30px;
+    border-bottom-color: #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #ececec;
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
 
-    #company > iframe {
-      width: 100%;
-      height: 368px;
-      margin-top: 40px;
-    }
+  #company > iframe {
+    width: 100%;
+    height: 368px;
+    margin-top: 40px;
+  }
 
-    #contact {
-      margin: 80px auto 80px auto;
-    }
+  /* CONTACT */
+  #contact {
+     margin: 80px auto 80px auto;
+  }
 
-    #contact > form > div {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-bottom: 30px;
-    }
+  form {
+    margin-left: 20px;
+  }
 
-    .contact-heading {
-      width: 240px;
-      align-self: center;
-    }
+  #contact > form > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
 
-    .contact-label {
-      font-weight: bold;
-    }
+  .contact-heading {
+    width: 240px;
+    align-self: center;
+  }
 
-    .contact-span {
-      color: #ce2222;
-      margin-left: 20px;
-      font-weight: bold;
-    }
+  .contact-label {
+    font-weight: bold;
+  }
 
-    .contact-textbox {
-      border-top: 0;
-      border-left: 0;
-      border-right: 0;
-      border-bottom-width: 1px;
-      border-bottom-color: #707070;
-      border-bottom-style: solid;
-      background-color: #fafafa;
-      width: 400px;
-      height: 56px;
-    }
+  .contact-span {
+    color: #ce2222;
+    margin-left: 20px;
+    font-weight: bold;
+  }
 
-    .contact-textarea {
-      border-top: 0;
-      border-left: 0;
-      border-right: 0;
-      border-bottom-width: 1px;
-      border-bottom-color: #707070;
-      border-bottom-style: solid;
-      background-color: #fafafa;
-      width: 400px;
-      height: 200px;
-    }
+  .contact-textbox {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    background-color: #fafafa;
+    width: 400px;
+    height: 56px;
+  }
 
-    details {
-      width: 700px;
-    }
+    /* お問い合わせ内容のテキストエリア */
+  .contact-textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    background-color: #fafafa;
+    width: 400px;
+    height: 200px;
+  }
 
-    details > div {
-      background-color: #fafafa;
-      padding: 20px;
-    }
+  /* 個人情報の取り扱い */
+  details {
+    width: 700px;
+  }
+
+  details > div {
+    background-color: #fafafa;
+    padding: 20px;
+  }
+
+  details > div > span {
+    font-weight: bold;
+  }
 
 /* フッター */
  footer {
@@ -526,7 +531,7 @@ header {
 
   /* mission.html用スタイル */
    /* ミッションのメインビジュアル */
-   #mission-main {
+   #mission {
     height: 496px;
     width: 100%;
     background-image: url("images/mission/mission-main.png");
@@ -702,16 +707,28 @@ header {
     width: 500px;
   }
 
+  .product-h2 {
+    color: #2710d5;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .product-h3 {
+    font-size: 28px;
+    margin: 0;
+  }
+
 }
 
   /* スマホ用のスタイル */
 
-  @media screen and (max-width: 767px) {
-    body {
-      min-width: 375px;
-      margin: 0;
-    }  
-  
+@media screen and (max-width: 767px) {
+
+  body {
+    min-width: 375px;
+    margin: 0;
+  }  
+    
   /* PC用ナビゲーション非表示 */
   #nav-pc {
       display: none;
@@ -726,28 +743,28 @@ header {
   /* スマホ用ナビゲーションの表示非表示切替 */
   /* 初期状態、レイアウトと非表示設定 */
   #nav-sp {
-    background-color: #2710d5;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    z-index: 100;
+      background-color: #2710d5;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: none;
+      z-index: 100;
   }
 
   /* xボタン */
   #close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
   }
-   /* ナビゲーションメニュー用ロゴ */
-   #logo-sp {
-    margin: 80px 0x 30px 20px;
+  /* ナビゲーションメニュー用ロゴ */
+    #logo-sp {
+      margin: 80px 0x 30px 20px;
   }
 
-   /* ナビゲーションのリンクの装飾設定 */
+  /* ナビゲーションのリンクの装飾設定 */
   #nav-sp > a {
     display: block;
   }
@@ -790,7 +807,7 @@ header {
     position: relative;
     height: 470px;
     width: 100%;
-    overflow: visible;
+    overflow: hidden;
   }
 
   #main-visual > div {
@@ -799,7 +816,7 @@ header {
     left: 0;
     background-color: #2710d5;
     color: #ffffff;
-    border-bottom-right-radius: 476px;
+    border-radius: 0 0 476px 0;
     text-align: center;
     height: 280px;
     width: 100%;
@@ -817,7 +834,7 @@ header {
 
   #main-visual > img {
     width: 100%;
-    border-top-left-radius: 476px;
+    border-radius: 476px 0 0 0;
     z-index: 10;
     position: absolute;
     bottom: 0;
@@ -832,9 +849,10 @@ header {
 
   h3 {
     font-size: 24px;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
   }
 
+  /* ミッション */
   #mission {
     margin: 20px;
   }
@@ -865,7 +883,7 @@ header {
   }
 
   /* 画像+説明の枠 */
-  #product-left > div ,
+  #product-left > div,
   #product-right > div {
     position: relative;
     height: 540px;
@@ -888,8 +906,7 @@ header {
   }
 
   .product-explain > h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
   }
 
   .product-photo {
@@ -897,8 +914,7 @@ header {
   }
 
   #product-more > img {
-    margin-bottom: -42px;
-    margin-left: 20px;
+    margin: 0 0 -42px 20px;
   }
 
   /* ABOUT US */
@@ -907,7 +923,7 @@ header {
     margin: 80px 20px 80px 20px;
   }
 
-  #aboutus >div {
+  #aboutus > div {
     display: flex;
     flex-direction: column;
   }
@@ -918,12 +934,12 @@ header {
     order: 2;
   }
 
-  .culture-imag {
-  width: 100%;
-  order: 1;
+  .culture-img {
+    width: 100%;
+    order: 1;
   }
 
-  .culture-imag2 {
+  .culture-img2 {
     width: 100%;
   }
 
@@ -980,7 +996,7 @@ header {
   .vision-box > span > h4 {
     color: #2710d5;
     font-size: 19px;
-    margin-top: 60px;
+    margin: 60px 0 0 0;
   }
 
   .vision-box > span > h5 {
@@ -989,56 +1005,54 @@ header {
   }
 
   .vision-box > span > p {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
   }
 
 
-/* CASES */
-#cases {
-  margin: 40px auto 40px auto;
-  width: 100%;
-}
+ /* CASES */
+  #cases {
+    margin: 80px 20px 80px 20px;
+  }
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  justify-content: center;
-}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-ul > li {
-  width: 33%;
-  margin: 100px;
-}
+  li {
+    display: flex;
+    margin: 20px 0 20px 0;
+  }
 
-.case-card {
-  background-color: #FFFFFF;
-  min-height: 400px;
-  box-shadow: 1px 1px 2px gray;
-}
+  .case-card {
+    display: inline-block;
+    background-color: #FFFFFF;
+    min-height: 400px;
+    box-shadow: 1px 1px 2px gray;
+  }
 
-.case-images {
-  width: 100%;
-}
+  .case-images {
+    width: 100%;
+  }
 
-.case-info {
-  padding: 10px 20px;
-}
+  .case-info {
+    padding: 10px 20px;
+  }
 
-.case-name {
-  color: #2710d5;
-  font-size: 19px;
-}
+  .case-name {
+    color: #2710d5;
+    font-size: 19px;
+  }
 
-.case-content {
-  font-size: 14px;
-}
+  .case-content {
+    font-size: 14px;
+  }
 
-/* COMPANY */
+
+ /* COMPANY */
 
   #company {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px 0 20px;
   }
 
   #company > h3 {
@@ -1049,7 +1063,7 @@ ul > li {
     width: 100%;
   }
 
-  .name-first {
+  .tableheader-first {
     text-align: left;
     padding: 20px;
     border-bottom-color: #2710d5;
@@ -1060,7 +1074,8 @@ ul > li {
     border-top-style: solid;
     width: 50px;
   }
-  .name {
+  
+  .tableheader {
     text-align: left;
     padding: 20px;
     border-bottom-color: #2710d5;
@@ -1069,13 +1084,13 @@ ul > li {
     width: 50px;
   }
 
-  .text {
+  .cell {
     padding: 20px;
     border-bottom-color: #ececec;
     border-bottom-width: 1px;
     border-bottom-style: solid;
   }
-  .text-first {
+  .cell-first {
     padding: 20px;
     border-bottom-color: #ececec;
     border-bottom-width: 1px;
@@ -1115,7 +1130,7 @@ ul > li {
 
   .contact-span {
     color: red;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
     font-weight: bold;
   }
 
@@ -1203,7 +1218,7 @@ ul > li {
 
   /* ミッション */
 
-  #mission-main {
+  #mission {
     height: 256px;
     width: 100%;
     background-image: url(images/mission/mission-main.png);
@@ -1242,8 +1257,15 @@ ul > li {
     font-size: 13px;
   }
 
+  /* ミッション　S2DGSの設定 */
   #mission-s2dgs {
     margin: 20px;
+  }
+
+  .mission-h2 {
+    color: #2710d5;
+    font-size: 38px;
+    margin: 0px;
   }
 
   .mission-h2::after {
@@ -1286,6 +1308,10 @@ ul > li {
 
   .fivegoals-h3 {
     font-size: 28px;
+    margin: 0;
+  }
+
+  .fivegoals-p {
     margin: 0;
   }
 
@@ -1360,8 +1386,6 @@ ul > li {
     font-size: 30px;
     margin: 0;
   }
-  
-
 }
 
  
