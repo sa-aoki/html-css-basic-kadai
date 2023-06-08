@@ -1,1 +1,199 @@
+/* PC、スマホ共通スタイル */
+
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+/*================
+ PC用のスタイル 
+=================*/
+
+/* 横幅設定 */
+@media screen and (min-width: 768px) {
+
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #logo {
+    margin-left: 20px;
+  }
+
+  #nav-pc {
+    text-align: left;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc > a {
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  #nav-pc > a:link {
+    color: black;
+  }
+
+  #nav-pc > a:hover {
+    color: black;
+  }
+
+  #nav-pc > a:active {
+    color: black;
+  }
+
+  #nav-pc > a:visited {
+    color: black;
+  }
+
+  #main-visual {
+    position: relative;
+    margin: 10px 20px;
+  }
+
+  #main-visual > h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 50px 0 30px 0;
+  }
+
+  #main-visual > p {
+    margin: 30px 0 10px 0;
+  }
+
+  #main-visual > img {
+    max-width: 1080px;
+    width: 100%;
+  }
+
+  /* スマホ用ナビゲーション非表示 */
+  #nav-sp {
+    display: none;
+  }
+
+  /* ハンバーガーメニューの非表示 */
+  #menu-sp {
+    display: none;
+  }
+
+}
+
+/*================
+ スマホ用のスタイル 
+=================*/
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  /* PC用ナビゲーション非表示 */
+  #nav-pc {
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu-sp {
+    float: right;
+    padding: 0;
+  }
+
+  /* スマホ用ナビゲーションの表示切替 */
+   /* 初期状態、レイアウトと非表示設定 */
+   #nav-sp {
+    background-color: #ce933e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
+
+  #nav-sp > a {
+    display: block;
+  }
+
+  #nav-sp > a:link {
+    color: white;
+  }
+
+  #nav-sp > a:hover {
+    color: white;
+  }
+
+  #nav-sp > a:hover {
+    text-decoration: underline;
+  }
+
+  #nav-sp > a:active {
+    color: white;
+  }
+
+  #nav-sp > a:visited {
+    color: white;
+  }
+
+  #nav-sp > .menu {
+    text-decoration: none;
+    display: block;
+    margin: 0 20px 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  #main-visual {
+    position: relative;
+    margin: 10px 20px;
+  }
+
+  #main-visual > h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 50px 0 30px 0;
+  }
+
+  #main-visual > p {
+    margin: 30px 0 10px 0;
+  }
+
+  #main-visual > img {
+    max-width: 375px;
+    width: 100%;
+  }
+
+    
+  }
+
+
 
